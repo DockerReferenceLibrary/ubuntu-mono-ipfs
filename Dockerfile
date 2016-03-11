@@ -5,4 +5,5 @@ FROM compulsivecoder/ubuntu-mono
 RUN apt-get update && \
     apt-get install unzip && \
     wget -q https://raw.githubusercontent.com/ipfs/install-go-ipfs/master/install-ipfs.sh && \
-    sh install-ipfs.sh
+    sh install-ipfs.sh && \
+    apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

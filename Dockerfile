@@ -9,5 +9,6 @@ RUN apt-get update && \
 
 RUN mkdir /.ipfs-data && \
   cd /.ipfs-data && \
-  ipfs init && \
-  ipfs daemon &
+  ipfs init
+
+ENTRYPOINT /usr/local/bin/ipfs daemon

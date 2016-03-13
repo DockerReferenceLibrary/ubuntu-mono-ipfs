@@ -7,4 +7,4 @@ RUN mkdir /.ipfs-data && \
   cd /.ipfs-data && \
   ipfs init
 
-ENTRYPOINT /usr/local/bin/ipfs daemon
+CMD /usr/local/bin/ipfs daemon

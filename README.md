@@ -1,8 +1,8 @@
 # ubuntu-mono-ipfs
 A dockerfile for running mono and ipfs on ubuntu.
 
-# Build
+# To build
 sh build.sh
 
-# Run
+# To run
 sh run.sh

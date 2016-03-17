@@ -7,6 +7,7 @@ RUN wget -q https://raw.githubusercontent.com/ipfs/install-go-ipfs/master/instal
 # Install Docker from Docker Inc. repositories.
 RUN curl -sSL https://get.docker.com/ | sh
 
+VOLUME /var/lib/docker
 
 #RUN mkdir /.ipfs-data && \
 #  cd /.ipfs-data && \
